@@ -1,8 +1,13 @@
 const express = require('express');
+const cors = require('cors');
 const app = express();
-const bodyParser = require('body-parser');
+// ... other code
 
-app.use(bodyParser.json());
+// Enable CORS for all routes
+app.use(cors());
+
+// ... rest of your code
+
 
 // Store tasks in an in-memory array (for demonstration purposes)
 let tasks = [];
